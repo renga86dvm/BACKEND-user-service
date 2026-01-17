@@ -9,3 +9,11 @@ app.get("/users", (req, res) => {
     { id: 2, name: "DevOps User" }
   ]);
 });
+
+app.get("/health", (req, res) => {
+  res.send("User Service is healthy");
+});
+
+app.listen(PORT, () =>
+  console.log(`User Service running on port ${PORT}`)
+);

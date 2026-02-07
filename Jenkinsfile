@@ -6,7 +6,7 @@ pipeline {
         AWS_ACCOUNT_ID = "017820689407"
         ECR_REPO       = "ruser-service"
         ECR_URI        = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
-        ECS_CLUSTER    = "ren-cluster"
+        ECS_CLUSTER    = "rdev-cluster"
         ECS_SERVICE    = "userservice-task-service-0qigdupy"
         IMAGE_TAG      = "${BUILD_NUMBER}"
     }
